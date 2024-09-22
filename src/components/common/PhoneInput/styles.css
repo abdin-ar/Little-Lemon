@@ -1,0 +1,12 @@
+.PhoneInput {
+  background-color: #fff !important;
+  height: 38px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  border-radius: 4px !important;
+}
+
+.PhoneInput input {
+  height: 100%;
+  outline: none !important;
+}

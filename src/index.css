@@ -1,0 +1,309 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+@layer base {
+  /* font families */
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url(/fonts/Roboto/Roboto-Thin.ttf);
+  }
+  @font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 100;
+    font-display: swap;
+    src: url(/fonts/Roboto/Roboto-ThinItalic.ttf);
+  }
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(/fonts/Roboto/Roboto-Light.ttf);
+  }
+  @font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url(/fonts/Roboto/Roboto-LightItalic.ttf);
+  }
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Roboto/Roboto-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Roboto/Roboto-Italic.ttf);
+  }
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(/fonts/Roboto/Roboto-Medium.ttf);
+  }
+  @font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url(/fonts/Roboto/Roboto-MediumItalic.ttf);
+  }
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/fonts/Roboto/Roboto-Bold.ttf);
+  }
+  @font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/fonts/Roboto/Roboto-BoldItalic.ttf);
+  }
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(/fonts/Roboto/Roboto-Black.ttf);
+  }
+  @font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 900;
+    font-display: swap;
+    src: url(/fonts/Roboto/Roboto-BlackItalic.ttf);
+  }
+  @font-face {
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url(/fonts/Karla/static/Karla-ExtraLight.ttf);
+  }
+  @font-face {
+    font-family: "Karla";
+    font-style: italic;
+    font-weight: 200;
+    font-display: swap;
+    src: url(/fonts/Karla/static/Karla-ExtraLightItalic.ttf);
+  }
+  @font-face {
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(/fonts/Karla/static/Karla-Light.ttf);
+  }
+  @font-face {
+    font-family: "Karla";
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url(/fonts/Karla/static/Karla-LightItalic.ttf);
+  }
+  @font-face {
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Karla/static/Karla-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Karla";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Karla/static/Karla-Italic.ttf);
+  }
+  @font-face {
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(/fonts/Karla/static/Karla-Medium.ttf);
+  }
+  @font-face {
+    font-family: "Karla";
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url(/fonts/Karla/static/Karla-MediumItalic.ttf);
+  }
+  @font-face {
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(/fonts/Karla/static/Karla-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: "Karla";
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url(/fonts/Karla/static/Karla-SemiBoldItalic.ttf);
+  }
+  @font-face {
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/fonts/Karla/static/Karla-Bold.ttf);
+  }
+  @font-face {
+    font-family: "Karla";
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/fonts/Karla/static/Karla-BoldItalic.ttf);
+  }
+  @font-face {
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(/fonts/Karla/static/Karla-ExtraBold.ttf);
+  }
+  @font-face {
+    font-family: "Karla";
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url(/fonts/Karla/static/Karla-ExtraBoldItalic.ttf);
+  }
+  @font-face {
+    font-family: "Markazi";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Markazi_Text/static/MarkaziText-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Markazi";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(/fonts/Markazi_Text/static/MarkaziText-Medium.ttf);
+  }
+  @font-face {
+    font-family: "Markazi";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(/fonts/Markazi_Text/static/MarkaziText-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: "Markazi";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/fonts/Markazi_Text/static/MarkaziText-Bold.ttf);
+  }
+  :root {
+    --max-width: min(53.75rem, 80vw);
+    /* theme colors */
+    --darkgrey: 0 0% 20%;
+    --grey: 150 6% 93%;
+    --lightgrey: 0 0% 96%;
+    --yellow: 50 91% 52%;
+    --lightred: 19 78% 69%;
+    --darkgreen: 160 13% 33%;
+    /* shadcn colors - light */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: var(--grey);
+    --secondary-foreground: var(--darkgreen);
+    --muted: var(--lightgrey);
+    --muted-foreground: var(--darkgreen);
+    --accent: var(--yellow);
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    /* shadcn colors - dark */
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+  html {
+    font-size: 4.4vw;
+  }
+
+  @media screen and (min-width: 360px) {
+    html {
+      font-size: max(100%, 0.95vw);
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply min-h-screen bg-background text-foreground;
+  }
+  #root {
+    @apply grid min-h-screen grid-rows-[auto_1fr_auto];
+  }
+}
