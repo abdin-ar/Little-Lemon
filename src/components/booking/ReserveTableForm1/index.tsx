@@ -28,6 +28,7 @@ import Typography from "@/components/common/Typography";
 import Img1 from "../../../assets/image/restaurant chef B.jpg";
 import Img2 from "../../../assets/image/restaurant.jpg";
 import ScrollToTop from "@/components/common/ScrollToTop";
+import "./styles.css";
 
 const ReserveTableForm1 = ({
   form,
@@ -72,6 +73,7 @@ const ReserveTableForm1 = ({
                 <FormLabel>Date</FormLabel>
                 <FormControl>
                   <Select
+                    className="selector"
                     options={dateOptions}
                     isSearchable={false}
                     {...field}
@@ -101,6 +103,7 @@ const ReserveTableForm1 = ({
                 <FormLabel>Time</FormLabel>
                 <FormControl>
                   <Select
+                    className="selector"
                     options={timeOptions}
                     isSearchable={false}
                     isDisabled={timeOptions.length === 0}
@@ -119,6 +122,7 @@ const ReserveTableForm1 = ({
                 <FormLabel>Number of Diners</FormLabel>
                 <FormControl>
                   <Select
+                    className="selector"
                     options={dinersOptions}
                     isSearchable={false}
                     {...field}
@@ -138,6 +142,7 @@ const ReserveTableForm1 = ({
                 <FormLabel>Occasion</FormLabel>
                 <FormControl>
                   <Select
+                    className="selector"
                     options={occasionOptions}
                     isSearchable={false}
                     {...field}
@@ -155,6 +160,7 @@ const ReserveTableForm1 = ({
                 <FormLabel>Seating</FormLabel>
                 <FormControl>
                   <Select
+                    className="selector"
                     options={seatingOptions}
                     isSearchable={false}
                     {...field}

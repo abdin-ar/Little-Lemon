@@ -1,0 +1,7 @@
+.selector > div {
+  height: 2.5rem;
+  border-radius: calc(var(--radius) * 0.5);
+}
+.selector * {
+  background: #fff;
+}
